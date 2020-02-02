@@ -1,5 +1,6 @@
 <nav class="menu">
   <ul class="menu__inner menu__inner--desktop">
+    <div class="spacer"></div>
     {{ if or $.Site.Params.showMenuItems ( eq .Site.Params.showMenuItems 0 ) }}
       {{ range first $.Site.Params.showMenuItems $.Site.Menus.main }}
         {{ if not .HasChildren }}
